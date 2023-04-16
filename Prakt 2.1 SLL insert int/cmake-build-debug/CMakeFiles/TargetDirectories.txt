@@ -1,0 +1,3 @@
+D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 2.1 SLL insert int/cmake-build-debug/CMakeFiles/Prakt_2_1_SLL_insert_int.dir
+D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 2.1 SLL insert int/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 2.1 SLL insert int/cmake-build-debug/CMakeFiles/rebuild_cache.dir

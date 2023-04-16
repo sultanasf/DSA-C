@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Prakt_2_1_SLL_insert_int",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Prakt_2_1_SLL_insert_int::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prakt_2_1_SLL_insert_int-Debug-771ebe1919799a4d1376.json",
+					"name" : "Prakt_2_1_SLL_insert_int",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 2.1 SLL insert int/cmake-build-debug",
+		"source" : "D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 2.1 SLL insert int"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

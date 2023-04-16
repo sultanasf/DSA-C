@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Prakt_5_2_Review_DLL",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Prakt_5_2_Review_DLL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prakt_5_2_Review_DLL-Debug-473c7e6d8ac1e41ec52f.json",
+					"name" : "Prakt_5_2_Review_DLL",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 5.2 Review DLL/cmake-build-debug",
+		"source" : "D:/Semester 2/Algoritma dan Struktur Data/Praktikum/Prakt 5.2 Review DLL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
