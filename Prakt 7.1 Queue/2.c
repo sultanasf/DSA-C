@@ -26,7 +26,7 @@ int main() {
 void menu() {
     int option;
     do {
-        puts("\nMenu Queue");
+        puts("\nMenu Queue Linked List");
         puts("1. Mengisi Queue (enqueue)");
         puts("2. Mengambil Queue (dequeue)");
         puts("3. Menampilkan Queue -> FIFO");

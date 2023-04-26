@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 #define MAX 5
-typedef char itemType;
+typedef int itemType;
 typedef struct {
     itemType data[MAX];
     int front, rear, count;
@@ -19,6 +19,10 @@ itemType dequeue(Queue *);
 
 void readQueue(Queue *);
 
+void minMaxQueue(Queue *);
+
+void searchQueue(Queue *);
+
 void menu(Queue *);
 
 int main() {
@@ -27,8 +31,7 @@ int main() {
 }
 
 void menu(Queue *q) {
-    int option;
-    char input;
+    int option, input;
     initialization(q);
     do {
         puts("\nMenu Queue");
@@ -36,6 +39,8 @@ void menu(Queue *q) {
         puts("2. Hapus data (dequeue)");
         puts("3. Tampilkan data min & max");
         puts("4. Cari data");
+        puts("5. Cetak isi Queue");
+        puts("6. Keluar");
         printf("Masukkan pilihan: ");
         scanf("%d", &option);
         fflush(stdin);
@@ -43,20 +48,25 @@ void menu(Queue *q) {
         switch (option) {
             case 1:
                 printf("Masukkan data: ");
-                scanf("%c", &input);
+                scanf("%d", &input);
                 fflush(stdin);
                 enqueue(q, input);
                 break;
             case 2:
-                printf("Item yang diambil adalah %c\n", dequeue(q));
+                printf("Item yang diambil adalah %d\n", dequeue(q));
                 break;
             case 3:
-                readQueue(q);
+                minMaxQueue(q);
                 break;
+            case 4:
+                searchQueue(q);
+                break;
+            case 5:
+                readQueue(q);
             default:
                 break;
         }
-    } while (option != 4);
+    } while (option != 6);
 }
 
 void initialization(Queue *q) {
@@ -103,7 +113,42 @@ void readQueue(Queue *q) {
     temp = q->front;
     puts("isi Queue:");
     for (int i = 0; i < q->count; i++) {
-        printf("%c\n", q->data[temp]);
+        printf("%d\n", q->data[temp]);
         temp = (temp + 1) % MAX;
+    }
+}
+
+void minMaxQueue(Queue *q) {
+    int min, max, temp;
+    temp = q->front;
+    for (int i = 0; i < q->count; i++) {
+        if (i == 0) {
+            min = q->data[temp];
+            max = q->data[temp];
+        } else {
+            if (q->data[temp] > max)
+                max = q->data[temp];
+            if (q->data[temp] < min)
+                min = q->data[temp];
+        }
+        temp = (temp + 1) % MAX;
+    }
+    printf("Nilai max = %d\nNilai min = %d\n", max, min);
+}
+
+void searchQueue(Queue *q) {
+    int temp, key, count = 0;
+    printf("Cari data berapa: ");
+    scanf("%d", &key);
+    temp = q->front;
+    for (int i = 0; i < q->count; ++i) {
+        if (q->data[temp] == key)
+            count++;
+        temp = (temp + 1) % MAX;
+    }
+    if (count == 0)
+        printf("%d tidak ada dalam queue\n", key);
+    else {
+        printf("%d ada sebanyak %d\n", key, count);
     }
 }
