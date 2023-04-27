@@ -53,7 +53,6 @@ void menu() {
                 readQueue();
                 break;
             case 4:
-                exit(0);
                 break;
             default:
                 puts("Opsi Invalid");
@@ -92,25 +91,24 @@ void enqueue() {
 }
 
 itemType dequeue() {
-    itemType tmp;
-    antrian *delete;
+    itemType temp;
+    antrian *del;
     if (head == NULL) {
         puts("Queue Kosong");
         return (' ');
     } else {
         if (head->next == NULL) {
-            tmp = head->item;
+            temp = head->item;
             free(head);
             head = NULL;
-            return tmp;
         } else {
-            tmp = head->item;
-            delete = head;
+            temp = head->item;
+            del = head;
             head = head->next;
-            free(delete);
-            delete = NULL;
-            return tmp;
+            free(del);
+            del = NULL;
         }
+        return temp;
     }
 }
 
